@@ -1,0 +1,44 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf810
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19100\viewh11920\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 03-24 23:49:43.138 21376-21376/? E/AndroidRuntime: FATAL EXCEPTION: main\
+                                                   Process: com.bol.shop, PID: 21376\
+                                                   java.lang.RuntimeException: Unable to start activity ComponentInfo\{com.bol.shop/com.bol.shop.gui.activities.WishlistsActivity\}: java.lang.NullPointerException: Attempt to invoke virtual method 'android.support.v7.widget.RecyclerView$Adapter android.support.v7.widget.RecyclerView.getAdapter()' on a null object reference\
+                                                       at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2665)\
+                                                       at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)\
+                                                       at android.app.ActivityThread.handleRelaunchActivity(ActivityThread.java:4519)\
+                                                       at android.app.ActivityThread.-wrap19(ActivityThread.java)\
+                                                       at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1483)\
+                                                       at android.os.Handler.dispatchMessage(Handler.java:102)\
+                                                       at android.os.Looper.loop(Looper.java:154)\
+                                                       at android.app.ActivityThread.main(ActivityThread.java:6119)\
+                                                       at java.lang.reflect.Method.invoke(Native Method)\
+                                                       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)\
+                                                       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)\
+                                                    Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.support.v7.widget.RecyclerView$Adapter android.support.v7.widget.RecyclerView.getAdapter()' on a null object reference\
+                                                       at com.bol.shop.gui.fragments.WishlistsFragment.resetParam(Unknown Source)\
+                                                       at com.bol.shop.gui.fragments.WishlistsFragment.loadWishlists(Unknown Source)\
+                                                       at com.bol.shop.gui.fragments.WishlistsFragment.refresh(Unknown Source)\
+                                                       at com.bol.shop.gui.activities.AbsDefaultActivity.switchNavFragment(Unknown Source)\
+                                                       at com.bol.shop.gui.activities.AbsDefaultActivity.showWishlists(Unknown Source)\
+                                                       at com.bol.shop.gui.activities.WishlistsActivity.reload(Unknown Source)\
+                                                       at com.bol.shop.gui.activities.WishlistsActivity.handleIntent(Unknown Source)\
+                                                       at com.bol.shop.gui.activities.WishlistsActivity.onCreate(Unknown Source)\
+                                                       at android.app.Activity.performCreate(Activity.java:6679)\
+                                                       at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)\
+                                                       at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)\
+                                                       at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)\'a0\
+                                                       at android.app.ActivityThread.handleRelaunchActivity(ActivityThread.java:4519)\'a0\
+                                                       at android.app.ActivityThread.-wrap19(ActivityThread.java)\'a0\
+                                                       at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1483)\'a0\
+                                                       at android.os.Handler.dispatchMessage(Handler.java:102)\'a0\
+                                                       at android.os.Looper.loop(Looper.java:154)\'a0\
+                                                       at android.app.ActivityThread.main(ActivityThread.java:6119)\'a0\
+                                                       at java.lang.reflect.Method.invoke(Native Method)\'a0\
+                                                       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)\'a0\
+                                                       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)\'a0\
+03-24 23:49:43.143 6336-7606/? W/ActivityManager:   Force finishing activity com.bol.shop/.gui.activities.WishlistsActivity}
